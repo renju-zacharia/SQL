@@ -84,7 +84,10 @@ where  first_name ='HARPO';
 #Which query would you use to re-create it?
 
 SHOW CREATE TABLE actor;
-
+					  
+CREATE TABLE actor_new
+AS ( SELECT * FROM actor );					  
+					  
 #6a. Use JOIN to display the first and last names, as well as the address, of each staff member. 
 #Use the tables staff and address:
 
